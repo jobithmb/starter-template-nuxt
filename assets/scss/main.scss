@@ -1,0 +1,37 @@
+/* Variables */
+@import "utils/variables";
+
+html {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 62.5%;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    color: $text-dark;
+    overflow-x: hidden;
+}
+
+/* Default Page Transitions  */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
