@@ -1,5 +1,5 @@
 # starter-template-nuxt-v2
-
+A Starter template with Nuxt2, Sass, ElementUI, RemixIcon and basic utils pre-configured.
 ## Build Setup
 
 ```bash
