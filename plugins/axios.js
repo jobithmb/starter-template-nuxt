@@ -1,4 +1,3 @@
-import Vue from 'vue'
 export default function ({ $axios, redirect, $config }, inject) {
   const errorHandler = (error) => {
     console.log('🐛', error)
