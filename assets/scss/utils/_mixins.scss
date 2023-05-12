@@ -1,0 +1,80 @@
+// responsive breakpoints
+// https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f
+
+// Small  smartphones (portrait view)
+$screen-xs-max: 400px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Desktops
+$screen-xl-max: 1200px;
+
+// Large Desktops
+$screen-xxl-max: 1400px;
+
+// Extra extra large devices
+@mixin xxl {
+  @media (max-width: #{$screen-xxl-max}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Smaller devices
+@mixin xs {
+  @media (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media (max-width: $screen + "px") {
+    @content;
+  }
+}
+
+/*
+// usage
+.my-box {
+  padding: 10px;
+  
+  @include sm {
+    padding: 20px;
+  }
+}
+*/
